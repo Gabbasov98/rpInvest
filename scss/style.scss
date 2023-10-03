@@ -1,0 +1,29 @@
+@import "reset";
+@import "inputs";
+@import "header";
+@import "index";
+$primary: #FF005C;
+body{
+  font-family: 'Inter', sans-serif;
+  color: #000;
+  font-weight: 400;
+  font-size: calc(100vw * (16 / 1920));
+}
+
+a{
+  &:hover{
+    color: $primary;
+  }
+}
+
+.container{
+  padding: 0 6.25em;
+  width: 100%;
+  //max-width: 1920px;
+  margin: 0 auto;
+}
+
+.text16{
+  font-size: 1em;
+  line-height: 120%;
+}

@@ -1,0 +1,58 @@
+.fg {
+  position: relative;
+  margin: 0;
+  font-size: 1em;
+  input {
+    border: none;
+    height: 4.72em;
+    padding: 2.22em 1.67em 0;
+    width: 100%;
+    font-size: 1.125em;
+    line-height: 140%;
+    border-radius: .357em;
+    background: #F5F7F9;
+    color: #000;
+    &[type="tel"]{
+      color: transparent;
+      &._filled,
+      &:focus{
+        color: #FF005C;
+      }
+    }
+    &._filled,
+    &:focus {
+      &~label{
+        top: 1.25em;
+        span{
+          font-size: .875em;
+        }
+      }
+    }
+  }
+  label{
+    pointer-events: none;
+    font-size: 1em;
+
+    position: absolute;
+    left: 1.875em;
+    top: 1.875em;
+    transition: all .1s;
+    color: #717171;
+    span{
+      font-size: 1.125em;
+      line-height: 140%;
+    }
+  }
+}
+
+.pass-toggle{
+  position: absolute;
+  top: 50%;
+  right: 1.875em;
+  transform: translateY(-50%);
+  width: 1.5em;
+  svg{
+    width: 100%;
+    height: auto;
+  }
+}
